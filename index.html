@@ -31,18 +31,17 @@
     <!-- Tăng tối đa thời gian chờ tải tài nguyên lên 60 giây (60000ms) -->
     <a-scene vr-mode-ui="enabled: true" crossorigin="anonymous">
       
-      <a-assets timeout="60000">
-        <!-- Bổ sung thuộc tính preload="auto" tối ưu cho video dung lượng lớn -->
-        <video id="video-360" 
-               src="./assets/7901377374353.mp4" 
-               autoplay="true" 
-               loop="true" 
-               muted="true"
-               preload="auto"
-               crossorigin="anonymous" 
-               playsinline 
-               webkit-playsinline>
-        </video>
+     <a-assets timeout="60000">
+  <video id="video-360" 
+         src="assets/7901377374353.mp4" 
+         autoplay="true" 
+         loop="true" 
+         muted="true" 
+         crossorigin="anonymous" 
+         playsinline="true" 
+         webkit-playsinline="true">
+  </video>
+</a-assets>
       </a-assets>
       
       <a-videosphere src="#video-360" rotation="0 -90 0"></a-videosphere>
